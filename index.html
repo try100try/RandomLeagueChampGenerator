@@ -5,33 +5,39 @@
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
     <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
 
+
     <!-- Javascript sketches -->
     <script src="sketch.js" type="text/javascript"></script>
 
+<style>
+ img {
+     display: block;
+ }
 
-    <style>
-      .button {
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      
+ img[src*="items"] { 
+  object-fit: none;
+  object-position: 0% 0;
+
+  width: 22px;
+  height: 22px;
+ }
+ img[src*="Boost"] { 
+  width: 22px;
+  height: 22px;
+ }
 
 
-      </style>
+</style>
 
 </head>
 
 <body>
 
   <br>
-  <button onclick="wild();">ny champ</button>
+  <button onclick="myp51.wild();"><img src="http://ddragon.leagueoflegends.com/cdn/5.5.1/img/ui/champion.png"> new champ</button>
+  <button onclick="myp52.Mythic();"><img src="http://ddragon.leagueoflegends.com/cdn/5.5.1/img/ui/items.png"> Mythic item</button>
+  <button onclick="clonk();"><img src="http://ddragon.leagueoflegends.com/cdn/10.25.1/img/spell/SummonerBoost.png"> clear all</button>
+  <!-- Button 1 should split into 2 where one of them is "add another item" the second being "clear all items"-->
   <br>
 
 
